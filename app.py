@@ -180,6 +180,10 @@ with st.container():
         st.markdown("</div>", unsafe_allow_html=True)
 
     with col_right:
+            # ---- PROFILE PHOTO ----
+        st.image("assets/isha.jpeg", width=230)   # change to .jpg if needed
+        st.markdown("")  # spacing
+
         st.metric("ML / DS Projects", "6+")
         st.metric("Graduate GPA", "3.8+")
         st.metric("Professional Experience", "1+ years")
