@@ -339,14 +339,14 @@ body {
 
 
 .proj-audio {
-    background-image: url("assets/creditmate.png"); /* or .jpg */
+    background-image: url("assets/audio.png"); /* or .jpg */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .proj-credit {
-    background-image: url("assets/audio.png"); /* or .jpg */
+    background-image: url("assets/creditmate.png"); /* or .jpg */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
