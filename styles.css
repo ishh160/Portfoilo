@@ -323,10 +323,12 @@ body {
 /* imaginary “images” */
 
 .proj-fairlens {
-  background: radial-gradient(circle at 10% 0%, var(--bg-cyan) 0, transparent 45%),
-              radial-gradient(circle at 90% 100%, var(--coral) 0, transparent 50%),
-              linear-gradient(135deg, var(--deep-teal), #020617);
+    background-image: url("assets/fairlens.png"); /* or .jpg */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 .proj-moma {
   background: linear-gradient(145deg, #fde68a, #f97316, #7c2d12);
