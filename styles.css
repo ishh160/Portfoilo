@@ -331,15 +331,25 @@ body {
 
 
 .proj-moma {
-  background: linear-gradient(145deg, #fde68a, #f97316, #7c2d12);
+    background-image: url("assets/moma.png"); /* or .jpg */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+
 .proj-audio {
-  background: linear-gradient(115deg, #1d4ed8, #22d3ee, #4c1d95);
+    background-image: url("assets/creditmate.png"); /* or .jpg */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .proj-credit {
-  background: linear-gradient(135deg, #022c22, #16a34a, #bbf7d0);
+    background-image: url("assets/audio.png"); /* or .jpg */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .proj-overlay {
