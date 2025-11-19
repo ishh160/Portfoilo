@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Isha Patel – Data Science Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Isha Patel – Data Science & Machine Learning projects." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Top Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-pill">Portfolio</span>
+        <div class="brand-text">
+          <span class="brand-name">Isha Patel</span>
+          <span class="brand-role">Data Science · Machine Learning</span>
+        </div>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+
+      <nav class="site-nav">
+        <a href="#hero">Intro</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Intro -->
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-kicker">Hi, I’m Isha</p>
+          <h1 class="hero-title">
+            I build small, honest ML projects<br />
+            that people can actually use.
+          </h1>
+          <p class="hero-sub">
+            Master’s in Data Science at Pace University, mixing model building with
+            real operations work from a senior daycare in New Jersey.
+          </p>
+          <div class="hero-tags">
+            <span class="tag-chip">End-to-end ML pipelines</span>
+            <span class="tag-chip">SHAP · LIME · AIF360</span>
+            <span class="tag-chip">Fair & explainable models</span>
+          </div>
+          <div class="hero-cta">
+            <a href="#projects" class="btn-primary">View projects</a>
+            <a href="#contact" class="btn-ghost">Say hello</a>
+          </div>
+        </div>
+
+        <div class="hero-photo-card">
+          <div class="hero-photo-wrap">
+            <!-- Replace src with your actual image path -->
+            <img src="assets/isha.jpeg" alt="Portrait of Isha Patel" />
+          </div>
+          <div class="hero-bio">
+            <p>Based in New York / New Jersey · GPA 3.8+</p>
+            <p>1+ year of operations & data work in a senior daycare.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container section-inner">
+        <div class="section-header">
+          <p class="section-tag">Projects</p>
+          <h2 class="section-title">Things I’ve built</h2>
+          <p class="section-sub">
+            Short, focused projects. Each has a clear question, a simple model,
+            and a way to explain what’s going on.
+          </p>
+        </div>
+
+        <div class="project-grid">
+
+          <!-- FairLens -->
+          <article class="project-card">
+            <div class="project-visual proj-fairlens">
+              <div class="proj-overlay">
+                <p class="proj-label">FairLens AI</p>
+                <p class="proj-caption">Eco score + fairness view for supermarket food.</p>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">FairLens AI</h3>
+              <p class="project-tagline">
+                Fair & explainable sustainability scores for food products.
+              </p>
+              <ul class="project-points">
+                <li>XGBoost pipeline on Open Food Facts to score products on sustainability.</li>
+                <li>SHAP, LIME, and AIF360 to explain and audit how the model treats groups.</li>
+              </ul>
+              <div class="project-meta">
+                <div class="badge-row">
+                  <span class="badge">Python</span>
+                  <span class="badge">Pandas</span>
+                  <span class="badge">XGBoost</span>
+                  <span class="badge">SHAP·LIME·AIF360</span>
+                </div>
+                <a class="project-link" href="https://github.com/your-username/fairlens-ai" target="_blank">
+                  View code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- MoMA -->
+          <article class="project-card">
+            <div class="project-visual proj-moma">
+              <div class="proj-overlay">
+                <p class="proj-label">MoMA Exhibition Helper</p>
+                <p class="proj-caption">Which artworks are more likely to be selected?</p>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">MoMA Exhibition Helper</h3>
+              <p class="project-tagline">
+                Logistic regression to predict if an artwork will be exhibited.
+              </p>
+              <ul class="project-points">
+                <li>Cleaned MoMA metadata and engineered features like medium and period.</li>
+                <li>Used SHAP to see how medium, year, and artist history shift the odds.</li>
+              </ul>
+              <div class="project-meta">
+                <div class="badge-row">
+                  <span class="badge">Python</span>
+                  <span class="badge">Scikit-learn</span>
+                  <span class="badge">Logistic Regression</span>
+                  <span class="badge">SHAP</span>
+                </div>
+                <a class="project-link" href="https://github.com/your-username/moma-exhibition-helper" target="_blank">
+                  View code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Audio emotion -->
+          <article class="project-card">
+            <div class="project-visual proj-audio">
+              <div class="proj-overlay">
+                <p class="proj-label">Audio Emotion</p>
+                <p class="proj-caption">Voice → emotion: happy, sad, angry, neutral…</p>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Audio Emotion Recognition</h3>
+              <p class="project-tagline">
+                SVM classifier on MFCC features extracted from speech clips.
+              </p>
+              <ul class="project-points">
+                <li>Librosa to build feature vectors (MFCCs and friends) from audio.</li>
+                <li>Tuned SVM and read confusion matrices to see which emotions clash.</li>
+              </ul>
+              <div class="project-meta">
+                <div class="badge-row">
+                  <span class="badge">Python</span>
+                  <span class="badge">Librosa</span>
+                  <span class="badge">SVM</span>
+                </div>
+                <a class="project-link" href="https://github.com/your-username/audio-emotion-recognition" target="_blank">
+                  View code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CreditMate -->
+          <article class="project-card">
+            <div class="project-visual proj-credit">
+              <div class="proj-overlay">
+                <p class="proj-label">CreditMate</p>
+                <p class="proj-caption">Explaining how payments bend your score.</p>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">CreditMate</h3>
+              <p class="project-tagline">
+                A small app that simulates how credit behaviour changes score and interest.
+              </p>
+              <ul class="project-points">
+                <li>Designed flows that show “what if I pay this much, this late?” in simple language.</li>
+                <li>Focused on clear explanations rather than heavy modelling.</li>
+              </ul>
+              <div class="project-meta">
+                <div class="badge-row">
+                  <span class="badge">Python</span>
+                  <span class="badge">Streamlit</span>
+                  <span class="badge">Pandas</span>
+                </div>
+                <a class="project-link" href="https://github.com/your-username/creditmate" target="_blank">
+                  View code
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section section-alt">
+      <div class="container section-inner">
+        <div class="section-header">
+          <p class="section-tag">Experience</p>
+          <h2 class="section-title">Where I’ve used this</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3 class="timeline-role">CACFP Coordinator – Senior Adult Daycare</h3>
+            <p class="timeline-meta">New Jersey · Part-time · Food program & data</p>
+            <ul>
+              <li>Keep CACFP records clean for audits (meals, attendance, timesheets).</li>
+              <li>Fix messy Excel data with staff before inspections.</li>
+              <li>Turn program rules into simple checklists people actually follow.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <h3 class="timeline-role">Graduate Data Science Projects – Pace University</h3>
+            <p class="timeline-meta">New York · Team-based coursework</p>
+            <ul>
+              <li>Led modelling and explanation for projects like FairLens AI and CreditMate.</li>
+              <li>Balanced clean baselines, explainability, and fairness checks.</li>
+              <li>Built slides and flows to answer “what did we learn?” in normal language.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container section-inner">
+        <div class="section-header">
+          <p class="section-tag">Skills</p>
+          <h2 class="section-title">What I work with</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skills-card">
+            <h3>Programming & Data</h3>
+            <div class="skill-chips">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>NumPy</span>
+              <span>Scikit-learn</span>
+              <span>Librosa</span>
+            </div>
+          </div>
+
+          <div class="skills-card">
+            <h3>Machine Learning & AI</h3>
+            <div class="skill-chips">
+              <span>Classification</span>
+              <span>Clustering</span>
+              <span>Anomaly detection</span>
+              <span>SHAP</span>
+              <span>LIME</span>
+              <span>AIF360</span>
+            </div>
+          </div>
+
+          <div class="skills-card">
+            <h3>Tools & Workflow</h3>
+            <div class="skill-chips">
+              <span>Streamlit</span>
+              <span>Git & GitHub</span>
+              <span>Excel</span>
+              <span>FastAPI (basic)</span>
+              <span>Project & Change Management</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container section-inner">
+        <div class="section-header">
+          <p class="section-tag">Contact</p>
+          <h2 class="section-title">Let’s talk</h2>
+          <p class="section-sub">
+            Open to internships and junior roles in data science, ML, or analytics.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-info">
+            <p>
+              If you have a role where a small, focused ML project could make a clear difference,
+              I’d love to hear what you’re working on.
+            </p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:your.email@example.com">your.email@example.com</a><br />
+              <strong>LinkedIn:</strong>
+              <a href="https://linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a><br />
+              <strong>GitHub:</strong>
+              <a href="https://github.com/your-username" target="_blank">github.com/your-username</a>
+            </p>
+          </div>
+
+          <form class="contact-form" onsubmit="return false;">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Tell me about the project…"></textarea>
+            </label>
+            <button type="submit" class="btn-primary full-width">Send (demo only)</button>
+            <p class="form-note">This is a front-end demo – hook it to your backend or email service later.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Isha Patel · Designed in HTML, CSS & JavaScript.</p>
+    </div>
+  </footer>
+</body>
+</html>
